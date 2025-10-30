@@ -1,0 +1,27 @@
+perk-enhanced-senses-name = Enhanced Senses
+perk-resilient-mutation-name = Resilient Mutation
+perk-dulled-emotions-name = Dulled Emotions
+perk-lightning-reflexes-name = Lightning Reflexes
+perk-artistic-name = Artistic
+perk-marksman-name = Marksman
+perk-natural-attunement-name = Natural Attunement
+perk-tough-name = Tough
+perk-strong-name = Strong
+perk-crafters-eye-name = Crafters Eye
+perk-trustworthy-name = Trustworthy
+perk-ingenuity-name = Ingenuity
+perk-blindly-stubborn-name = Blindly Stubborn
+
+perk-enhanced-senses-desc = Due to their heightened senses, witchers take no penalties from areas of dim light and gain an inherent +1 to their Awareness skill, as well as the ability to track things by scent alone.
+perk-resilient-mutation-desc = After all of the mutations required to become a witcher, they are immune to diseases and are able to use mutagens.
+perk-dulled-emotions-desc = Thanks to trauma and mutation, a witcher’s emotions are dulled. Witchers do not have to make courage checks against Intimidation, but they have a -4 to their Empathy Stat. This cannot bring Empathy below 1.
+perk-lightning-reflexes-desc = After intensive training and mutation, witchers are much faster and more agile than humans. They gain a permanent +1 to their Reflex and Dexterity that can raise both stats above 10.
+perk-artistic-desc = Elves have a natural eye for beauty and a talent for artistic endeavours. Elves gain an inherent +1 to their Fine Arts skill.
+perk-marksman-desc = Years of tradition and practice make elves some of the best archers in the world. Elves gain an inherent +2 to their Archery skill and can draw and string a bow without taking an action.
+perk-natural-attunement-desc = Elves have a deep magical bond with nature itself. Elves do not disturb animals, meaning that any beast they encounter is considered friendly and will not attack unless provoked. Elves also automatically find any plant substance rated as commonly availability (or lower) that they are seeking, as long as the substance would occur naturally in the surrounding terrain.
+perk-tough-desc = Spending much of their time in the mountains and mines, dwarves have naturally tough skin. As such a dwarfs’ skin has a natural stopping power of 2. This SP cannot be lowered via weapon attacks or ablation damage.
+perk-strong-desc = Due to their compact frame and propensity for tough, physically demanding professions, dwarves gain a +1 to their Physique skill and raise their Encumberance by 25.
+perk-crafters-eye-desc = With their eye for fine detail and appraisal it is hard to bluff a dwarf. Dwarves have an inherent +1 to their Business skill.
+perk-trustworthy-desc = In a world where non-humans can’t be trusted, humans look more trustworthy. Humans have an inherent +1 to their Charisma, Seduction, and Persuasion checks against other humans.
+perk-ingenuity-desc = Humans are clever and often have brilliant solutions to difficult problems. Humans gain an inherent +1 to Deduction.
+perk-blindly-stubborn-desc = Part of the human race’s greatest strength is its willingness to charge forward endlessly, even into truly life-threatening situations. A human can summon up their courage and reroll a failed Resist Coercion or Courage roll 3 times per game session. They take the higher of the two rolls, but if they still fail they cannot re-use the ability to roll again.
