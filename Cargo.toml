@@ -1,0 +1,6 @@
+[package]
+name = "witcher_trpg_character_creator"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
