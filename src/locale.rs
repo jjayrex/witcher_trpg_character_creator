@@ -11,29 +11,27 @@ impl Locale {
         Self(Arc::new(RwLock::new(bundle)))
     }
 
-    pub fn msg(&self, key: &str) -> String {
-        let b = self.0.read().ok().unwrap();
-        let msg = b.get_message(key).unwrap();
-        let pat = msg.value().unwrap();
+    pub fn msg(&self, key: &str) -> Option<String> {
+        let b = self.0.read().ok()?;
+        let msg = b.get_message(key)?;
+        let pat = msg.value()?;
         let mut errs = Vec::new();
-        b.format_pattern(pat, None, &mut errs).into_owned()
+        Some(b.format_pattern(pat, None, &mut errs).into_owned())
     }
 }
 
 pub fn build_bundle() -> FluentBundle<FluentResource> {
     let langid = langid!("en-US");
-    let locale = "".to_string();
 
-    if langid == langid!("pl-PL") {
-        let locale = fs::read_to_string("locale/pl.ftl").unwrap();
+    let locale: String = if langid == langid!("pl-PL") {
+        fs::read_to_string("locale/pl.ftl").expect("missing pl.ftl")
     } else {
-        let locale = fs::read_to_string("locale/en.ftl").unwrap();
-    }
+        fs::read_to_string("locale/en.ftl").expect("missing en.ftl")
+    };
 
     let mut bundle = FluentBundle::new(vec![langid]);
 
-    let res = FluentResource::try_new(locale).unwrap();
-
-    bundle.add_resource(res);
+    let res = FluentResource::try_new(locale).expect("invalid FTL");
+    bundle.add_resource(res).expect("failed to add resource");
     bundle
 }
